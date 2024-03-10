@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+
+h1, h2, h3, h4, h5, h6, p, q, a, #navbar, #header, #footer, #comment-area, #typewriter, .content, .content2, .button {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #2c0016;
+    text-align: center;
+}
+
+#navbar {
+    width: 100%;
+    background-color: #850042;
+    overflow: auto;
+    z-index: 999;
+}
+  
+#navbar a {
+    float: right;
+    padding: 13px 0px 13px;
+    width: 120px;
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+    font-size: 15px;
+}
+  
+#navbar a:hover {
+    background-color: #000;
+}
+  
+#navbar a-Active {
+    cursor:pointer;
+    float: left;
+    color: rgb(241, 241, 241);
+    background-color: #c95297;
+    width: 120px;
+    font-size: 15px;
+}
+  
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}  
+
+#header {
+    text-align: center;
+    font-size: medium;
+    padding: 3% 0% 4%;
+    background-image: url("../images/header-bg.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#default {
+    padding: 2% 0% 40%;
+}
+
+#main {
+    padding: 1% 0% 3%;
+}
+
+.main-container {  
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    height: 55%;
+    width: 35%;
+    background: #e0e0e0;
+    opacity: .85;
+    overflow: hidden;
+    border-radius: 40px;
+    box-shadow: 0 0 20px 8px #8b8b8b;
+}
+
+.recipe-container {
+    padding: 0% 5% 0%;
+    margin-top: 3%;  
+    margin-left: 10%;
+    height: fit-content;
+    width: 70%;
+    background: #e0e0e0;
+    opacity: .9;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 8px #8b8b8b;
+}
+
+.login-container {  
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    height: 62%;
+    width: 35%;
+    background: #e0e0e0;
+    opacity: .85;
+    overflow: hidden;
+    border-radius: 40px;
+    box-shadow: 0 0 20px 8px #8b8b8b;
+}
+
+.review-container {  
+    position: absolute;
+    left: 50%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    height: 65%;
+    width: 30%;
+    background: #e0e0e0;
+    opacity: .85;
+    overflow: hidden;
+    border-radius: 40px;
+    box-shadow: 0 0 20px 8px #8b8b8b;
+}
+
+hr {
+    opacity: 0.75;
+    margin: 0;
+    padding: 0;
+    border: 1.5px solid #c95297;
+}
+
+.more-container {
+    overflow: hidden;
+    max-height: fit-content;
+}
+
+.more-thumb {
+    float: left;
+    display: block;
+    background: url("../images/more.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    min-height: 400px;
+}
+
+.more-content {
+    margin: 5% 0% 15% 40%;
+}
+
+#more-text-change {
+    margin-top: 10%;
+}
+
+.clients-container {
+    overflow: hidden;
+    max-height: fit-content;
+}
+
+.clients-thumb {
+    float: right;
+    display: block;
+    background: url("../images/clients.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    min-height: 400px;
+}
+
+.clients-content {
+    margin: 5% 50% 5% 0%;
+}
+
+.clients-title {
+    font-weight: bold;
+}
+
+.comments-container {
+    position: relative;
+}
+  
+.comment {
+    display: none;
+    padding: 10% 8% 0% 8%;
+    text-align: center;
+}
+
+.dot-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #6e6e6e;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    opacity: 0.4;
+}
+  
+.active, .dot:hover {
+    background-color: #ff6ac1;
+    opacity: 0.9;
+}
+  
+q {
+    font-size: medium;
+    font-style: italic;
+}
+  
+.author {
+    font-size: small;
+    font-style: italic;
+}
+
+.requests-container {
+    overflow: hidden;
+    max-height: 30%;
+}
+
+.requests-content {
+    margin: 3% 0% 5% 0%;
+}
+
+.purple {
+    color: #c70074;
+}
+
+.white {
+    color: rgb(211, 211, 211);
+}
+
+.light-purple {
+    color: #da3796;
+}
+
+.white-pink {
+    color: #e4a1c8;
+}
+
+.logo {
+    border-radius: 50%;
+    border: 2px solid #831d58;
+    max-width: 50%;  
+    height: 30%; 
+    opacity: 1;
+}
+
+.food {
+    margin-top: 30px;
+    border-radius: 15%;
+    border: 2px solid #831d58;
+    width: 250px;
+    height: 220px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.gif {
+    width: 300px;
+    height: 270px; 
+}
+
+.reduced {
+    max-width: 32%;
+}
+
+.logo:hover {
+    opacity: .85;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    text-align: center;
+    color: #831d58;
+    padding: 0% 15% 0%;
+}
+
+.recipe-content {
+    text-align: center;
+    padding: 0% 2% 4%;
+}
+
+.content2 {
+    position: absolute;
+    top: 49%;
+    transform: translatey(-50%);
+    text-align: center;
+    color: #831d58;
+    padding: 0% 30% 0%;
+}
+
+#see-more {
+    padding-top: 39%;
+    color: rgb(211, 211, 211);
+    font-size: 0.8em;
+    padding-bottom: 2%;
+}
+  
+.stage {
+    display: flex;
+    width: 100%;
+}
+
+.box {
+    align-self: center;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-image: url("../images/scroll-down.png");
+    height: 30px;
+    background-repeat: no-repeat;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+    width: 60px;
+}
+
+.bounce-4 {
+    animation-name: bounce-4;
+    animation-timing-function: ease;
+}
+  
+@keyframes bounce-4 {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(35px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+#footer {
+    text-align: center;
+    font-size: smaller;
+    padding: 1.2% 0% 1.2%;
+    width: 100%;
+    background-color: #1d1d1d;
+    color: rgb(241, 241, 241);
+}
+
+.item.social {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.item.social>a {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+}
+
+.item.social>a:hover {
+    opacity: 1;
+    color: #ff6ac1;
+    box-shadow: 0 0 0 1px rgba(255, 33, 244, 0.25);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 0.5%;
+    opacity: 0.35;
+    margin-bottom: 0;
+}
+
+.button {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #e75bad 0, #a80155 100%);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 12px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: rgb(241, 241, 241);
+    cursor: pointer;
+    display: inline-flex;
+    height: 35px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 13px;
+    padding-right: 13px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 0.78em;
+}
+
+.show-recipe {
+    margin: 1.6% 0 8%;
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+
+.show-recipe-2 {
+    margin: 2% 0% 3%;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+#button_submit {
+    display: none;
+    visibility: hidden;
+}
+    
+.button:focus {
+    box-shadow: #850042 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #850042 0 -3px 0 inset;
+}
+    
+.button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #850042 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+    
+.button:active {
+    box-shadow: #850042 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.spaced {
+    margin-left: 2%;
+}
+
+.smaller {
+    font-size: smaller;
+}
+
+.small {
+    font-size: small;
+}
+
+.medium {
+    font-size: medium;
+}
+
+.x-large {
+    font-size: x-large;
+}
+
+.rounded-input {
+    text-align: center;
+    border-radius: 60px;
+    border: 2px solid #c95297;
+    padding: 3% 0% 3%;
+    width: 100%; 
+}
+
+#comment-area {
+    margin: 5% 0% 5%;
+    padding: 1.5% 3% 1.5%;
+    box-sizing: border-box; 
+    overflow-y: scroll;
+    border-radius: 10px;
+    border: 2px solid #c95297;
+    width: 90%;
+    height: 120px;
+    resize: none;
+}
+
+/* ================================================Responsive=========================================== */
+/* We are interested on making this web app responsive on phones, tablets and normal pc */
+
+/* Very small phones -- From screens smaller than 300px the behaviour is not controlled */
+@media screen and (min-width:300px) and (max-width:369px) {
+    #navbar a {
+        padding: 16px 0px 16px;
+        font-size: 12px;
+        width: 70px;
+    }
+  
+    #navbar a-Active {
+        font-size: 12px;
+        width: 70px;
+    }
+
+    #header {
+        padding: 10% 0% 10%;
+    }
+
+    #default {
+        margin-top: 120%;
+    } 
+
+    .main-container {
+        top: 42%;
+        height: 60%;
+        width: 95%;
+    }
+
+    .content {
+        padding: 0% 5% 0%;
+    }
+
+    .more-content {
+        margin: 5% 0% 20% 50%;
+        padding: 0% 4% 0%;
+    }
+
+    #see-more {
+        padding-top: 145%;
+        font-size: 0.7em;
+        padding-bottom: 2%;
+    }
+
+    .more-thumb {
+        min-height: 300px;
+    }
+
+    #more-text-change {
+        margin-top: 20%;
+    }
+
+    .clients-thumb {
+        background-position: right;
+        background-size: 200%;
+        min-height: 420px;
+    }
+
+    .clients-content {
+        padding: 2%;
+    }
+
+    .login-container {  
+        top: 42%;
+        height: 60%;
+        width: 85%;
+    }
+
+    .content2 {
+        padding: 0% 20% 0%;
+    }
+    
+    .recipe-container {
+        margin-left: 0%;
+        width: 90%;
+    }
+
+    .review-container {  
+        padding-left: 3%;
+        top: 42%;
+        height: 66%;
+        width: 90%;
+    }
+
+    #main {
+        padding: 2% 0% 25%;
+    }
+}
+
+
+/* Phones */
+@media screen and (min-width:370px) and (max-width:459px) {
+    #navbar a {
+        padding: 15px 0px 15px;
+        font-size: 13px;
+        width: 80px;
+    }
+  
+    #navbar a-Active {
+        font-size: 13px;
+        width: 80px;
+    }
+
+    #header {
+        padding: 10% 0% 10%;
+    }
+
+    #default {
+        margin-top: 85%;
+    } 
+
+    .main-container {
+        top: 42%;
+        height: 60%;
+        width: 85%;
+    }
+
+    .content {
+        padding: 0% 5% 0%;
+    }
+
+    .more-content {
+        margin: 5% 0% 20% 50%;
+        padding: 0% 8% 0%;
+    }
+
+    #see-more {
+        padding-top: 115%;
+        font-size: 0.7em;
+        padding-bottom: 2%;
+    }
+
+    .more-thumb {
+        min-height: 340px;
+    }
+
+    #more-text-change {
+        margin-top: 20%;
+    }
+
+    .clients-thumb {
+        background-size: 140%;
+        min-height: 340px;
+    }
+
+    .clients-content {
+        padding: 2%;
+    }
+
+    .login-container {  
+        top: 42%;
+        height: 65%;
+        width: 85%;
+    }
+
+    .content2 {
+        padding: 0% 28% 0%;
+    }
+    
+    .recipe-container {
+        margin-left: 1%;
+        width: 88%;
+    }
+
+    .review-container {  
+        padding-left: 5%;
+        top: 42%;
+        height: 64%;
+        width: 85%;
+    }
+
+    #main {
+        padding: 2% 0% 32%;
+    }
+}
+  
+/* Larger phones - fablet */
+@media screen and (min-width:460px) and (max-width:599px) {
+    #navbar a {
+        padding: 12px 5px 11px;
+        width: 90px;
+    }
+  
+    #navbar a-Active {
+        width: 90px;
+    }
+
+    #header {
+        padding: 2% 0% 8%;
+    }
+
+    #default {
+        margin-top: 63%;
+    } 
+
+    .main-container {
+        top: 42%;
+        height: 60%;
+        width: 85%;
+    }
+
+    .content {
+        padding: 0% 5% 0%;
+    }
+
+    .more-content {
+        margin: 5% 0% 20% 50%;
+        padding: 0% 4% 0%;
+    }
+
+    #see-more {
+        padding-top: 100%;
+        font-size: 0.8em;
+    }
+
+    .more-thumb {
+        min-height: 340px;
+    }
+
+    #more-text-change {
+        margin-top: 20%;
+    }
+
+    .clients-thumb {
+        background-size: 140%;
+        min-height: 340px;
+    }
+
+    .clients-content {
+        padding: 2%;
+    }
+
+    .login-container {  
+        top: 42%;
+        height: 65%;
+        width: 70%;
+    }
+
+    .content2 {
+        padding: 0% 30% 0%;
+    }
+    
+    .recipe-container {
+        margin-left: 4%;
+        width: 82%;
+    }
+
+    .review-container {  
+        padding-left: 3%;
+        top: 42%;
+        height: 66%;
+        width: 65%;
+    }
+
+    #main {
+        padding: 2% 0% 28%;
+    }
+}
+  
+/* Mini-tablet */
+@media screen and (min-width:600px) and (max-width:700px) {
+    #navbar a {
+        padding: 11px 6px 11px;
+        width: 100px;
+    }
+  
+    #navbar a-Active{
+        width: 100px;
+    }
+
+    #header {
+        padding: 2% 0% 5%;
+    }
+
+    #default {
+        margin-top: 55%;
+    } 
+
+    .main-container {
+        top: 42%;
+        height: 60%;
+        width: 85%;
+    }
+
+    .content {
+        padding: 0% 5% 0%;
+    }
+
+    .more-content {
+        margin: 5% 0% 20% 50%;
+        padding: 0% 4% 0%;
+    }
+
+    #see-more {
+        padding-top: 90%;
+        font-size: 0.8em;
+        padding-bottom: 8%;
+    }
+
+    #more-text-change {
+        margin-top: 20%;
+    }
+    
+    .login-container {  
+        top: 42%;
+        height: 65%;
+        width: 70%;
+    }
+
+    .content2 {
+        padding: 0% 29% 0%;
+    }
+    
+    .recipe-container {
+        margin-left: 4%;
+        width: 82%;
+    }
+
+    .review-container {  
+        padding-left: 4%;
+        top: 42%;
+        height: 66%;
+        width: 60%;
+    }
+
+    #main {
+        padding: 2% 0% 20%;
+    }
+}
+  
+/* Tablets */
+@media screen and (min-width:701px) and (max-width:799px) {
+    #header {
+        padding: 2% 0% 4%;
+    }
+
+    #default {
+        margin-top: 30%;
+    } 
+
+    .main-container {
+        top: 42%;
+        height: 55%;
+        width: 65%;
+    }
+
+    .more-content {
+        margin: 5% 0% 20% 50%;
+        padding: 0% 4% 0%;
+    }
+
+    #see-more {
+        padding-top: 70%;
+        font-size: 0.8em;
+        padding-bottom: 4%;
+    }
+
+    #more-text-change {
+        margin-top: 15%;
+    }
+    
+    .login-container {  
+        top: 42%;
+        height: 65%;
+        width: 58%;
+    }
+    
+    .recipe-container {
+        margin-left: 4%;
+        width: 82%;
+    }
+
+    .review-container {  
+        top: 44%;
+        height: 68%;
+        width: 55%;
+    }
+
+    #main {
+        padding: 2% 0% 15%;
+    }
+}
+  
+/* Tablets */
+@media screen and (min-width:800px) and (max-width:999px) {
+    #header {
+        padding: 2% 0% 2%;
+    }
+
+    #default {
+        margin-top: 16%;
+    } 
+
+    .main-container {
+        top: 42%;
+        height: 58%;
+        width: 50%;
+    }
+
+    .more-content {
+        margin: 5% 0% 20% 50%;
+        padding: 0% 4% 0%;
+    }
+
+    #see-more {
+        padding-top: 60%;
+        font-size: 0.8em;
+        padding-bottom: 4%;
+    }
+
+    #more-text-change {
+        margin-top: 18%;
+    }
+    
+    .login-container {  
+        top: 40%;
+        height: 60%;
+        width: 45%;
+    }
+    
+    .recipe-container {
+        margin-left: 8%;
+        width: 70%;
+    }
+
+    .review-container {  
+        top: 42%;
+        height: 65%;
+        width: 45%;
+    }
+
+    #main {
+        padding: 2% 0% 10%;
+    }
+}
+  
+/* PCs */
+@media screen and (min-width:1000px) and (max-width:1219px) {
+    #default {
+        margin-top: 10%;
+    } 
+
+    .main-container {
+        top: 42%;
+        height: 55%;
+        width: 45%;
+    }
+
+    #see-more {
+        padding-top: 50%;
+        font-size: 0.8em;
+    }
+    
+    .login-container {  
+        top: 43%;
+        height: 60%;
+        width: 40%;
+    }
+
+    .review-container {  
+        top: 45%;
+        height: 65%;
+        width: 40%;
+    }
+
+    #main {
+        padding: 2% 0% 7%;
+    }
+}
